@@ -1,9 +1,15 @@
 html {
 	background: #fff;
+    font-family: 'Noto Sans', sans-serif !important;
+}
+
+h1 {
+	font-family: 'Noto Sans', sans-serif !important;
 }
 
 p.title {
 	font-size: 6rem !important;
+	font-family: 'Noto Sans', sans-serif !important;
 }
 
 .grid-container {
