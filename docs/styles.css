@@ -1,0 +1,16 @@
+html {
+	background: #fff;
+}
+
+p.title {
+	font-size: 6rem !important;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat( auto-fit, minmax( 12rem, 1fr ) );
+  	grid-gap: 10px;
+/*	grid-template-columns: auto auto auto;
+	display: grid;
+	grid-gap: 2rem 2rem;*/
+}

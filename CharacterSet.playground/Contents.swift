@@ -98,7 +98,8 @@ extension NSCharacterSet {
     }
 }
 
-let numbers6: NSCharacterSet = NSCharacterSet.decimalDigits as NSCharacterSet
-for character in numbers6.characters {
-    print(character)
-}
+let numbers6: NSCharacterSet = NSCharacterSet.alphanumerics as NSCharacterSet
+print(numbers6.characters)
+//for character in numbers6.characters {
+//    print(character)
+//}
