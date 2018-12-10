@@ -28,32 +28,32 @@ numbers3.longCharacterIsMember(character3) /// returns `true`
 
 // MARK: - Snippet 4
 
-func invalidCharactersExist4(input4: String) -> Bool {
-    let numbers4 = CharacterSet.decimalDigits
-    let rangeOfInvalidCharacters4 = input4.rangeOfCharacter(from: numbers4.inverted)
-    return rangeOfInvalidCharacters4 != nil
+func isValidNumeral(input4: String) -> Bool {
+    let numbers = CharacterSet.decimalDigits
+    let rangeOfInvalidCharacters = input4.rangeOfCharacter(from: numbers.inverted)
+    return rangeOfInvalidCharacters == nil
 }
 
 let string1 = "qwerty12345"
 let string2 = "qwerty"
 let string3 = "12345"
 
-print("\"\(string1)\" contains invalid characters: \(invalidCharactersExist4(input4: string1))")
-/// "qwerty12345" contains invalid characters: true
+print("\"\(string1)\" only contains numbers: \(isValidNumeral(input4: string1))")
+/// "qwerty12345" only contains numbers: false
 
-print("\"\(string2)\" contains invalid characters: \(invalidCharactersExist4(input4: string2))")
-/// "qwerty" contains invalid characters: true
+print("\"\(string2)\" only contains numbers: \(isValidNumeral(input4: string2))")
+/// "qwerty" only contains numbers: false
 
-print("\"\(string3)\" contains invalid characters: \(invalidCharactersExist4(input4: string3))")
-/// "12345" contains invalid characters: false
+print("\"\(string3)\" only contains numbers: \(isValidNumeral(input4: string3))")
+/// "12345" only contains numbers: true
 
 
 
 // MARK: - Snippet 5
 
 let string4 = "᧐᪂᧐"
-print("\"\(string4)\" contains invalid characters: \(invalidCharactersExist4(input4: string4))")
-/// "᧐᪂᧐" contains invalid characters: false
+print("\"\(string4)\" only contains numbers: \(isValidNumeral(input4: string4))")
+/// "᧐᪂᧐" only contains numbers: true
 
 
 
